@@ -1,0 +1,1 @@
+This folder contains scripts that format Material Symbols' codepoint table into LaTeX codes.

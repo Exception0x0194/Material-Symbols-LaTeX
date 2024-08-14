@@ -43,15 +43,25 @@ For example, \texttt{\textbackslash mSymbol\{sports-soccer\}} renders \mSymbol{s
 
 These commands can be employed anywhere in your \LaTeX\ documents to insert icons at desired locations.
 
-\subsection{Styles}
+\subsection{Styles and Fillings}
 
-Material Symbols are available in three styles: \textbf{Outlined}, \textbf{Round}, and \textbf{Sharp}. The default style is \textbf{Outlined}, but you can specify an alternative style using an optional argument:
+Material Symbols are available in three styles: \textbf{Outlined}, \textbf{Round}, and \textbf{Sharp}; additionally, a \textbf{Filled} option is available for all symbols, providing a visually distinct and more pronounced appearance. The default style is \textbf{Outlined}, but you can specify an alternative style using an optional argument:
 
 \begin{itemize}
     \item \texttt{\textbackslash mSymbol[outlined]\{star-rate\}} (or \texttt{\textbackslash mSymbol\{star-rate\}}) displays the icon's outlined version: \mSymbol{star-rate}.
     \item \texttt{\textbackslash mSymbol[rounded]\{star-rate\}} displays the icon's rounded version: \mSymbol[rounded]{star-rate}.
     \item \texttt{\textbackslash mSymbol[sharp]\{star-rate\}} displays the icon's sharp version: \mSymbol[sharp]{star-rate}.
 \end{itemize}
+
+For more nuanced customization, filled variants can also be combined with the outline, round, and sharp styles as follows:
+
+\begin{itemize}
+    \item \texttt{\textbackslash mSymbol[outlined-filled]\{star-rate\}} displays the icon's outlined filled version: \mSymbol[outlined-filled]{star-rate}.
+    \item \texttt{\textbackslash mSymbol[rounded-filled]\{star-rate\}} displays the icon's rounded filled version: \mSymbol[rounded-filled]{star-rate}.
+    \item \texttt{\textbackslash mSymbol[sharp-filled]\{star-rate\}} displays the icon's sharp filled version: \mSymbol[sharp-filled]{star-rate}.
+\end{itemize}
+
+These commands allow for a high degree of flexibility in document design, enabling users to choose the icon style that best suits the visual context of their documents.
 
 \section{List of Icons}
 

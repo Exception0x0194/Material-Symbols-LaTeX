@@ -19,6 +19,22 @@
     Extension=.ttf,
 ]{MaterialSymbolsSharp-Regular}
 
+\newfontfamily{\MaterialSymbolsOutlinedFilled}[
+    Path=fonts/,
+    Extension=.ttf,
+]{MaterialSymbolsOutlined_Filled-Regular}
+
+\newfontfamily{\MaterialSymbolsRoundedFilled}[
+    Path=fonts/,
+    Extension=.ttf,
+]{MaterialSymbolsRounded_Filled-Regular}
+
+\newfontfamily{\MaterialSymbolsSharpFilled}[
+    Path=fonts/,
+    Extension=.ttf,
+]{MaterialSymbolsSharp_Filled-Regular}
+
+
 \input{name-casting}
 
 \newcommand{\mSymbolCode}[2][regular]{%
@@ -27,6 +43,9 @@
             {outlined}{\MaterialSymbolsOutlined\symbol{"#2}}%
             {rounded}{\MaterialSymbolsRounded\symbol{"#2}}%
             {sharp}{\MaterialSymbolsSharp\symbol{"#2}}%
+            {outlined-filled}{\MaterialSymbolsOutlinedFilled\symbol{"#2}}%
+            {rounded-filled}{\MaterialSymbolsRoundedFilled\symbol{"#2}}%
+            {sharp-filled}{\MaterialSymbolsSharpFilled\symbol{"#2}}%
         }[\MaterialSymbolsOutlined\symbol{"#2}]%
     }%
 }

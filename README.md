@@ -2,9 +2,9 @@
 
 ![Showcase of symbols](docs/showcase.jpg)
 
-Check [introduction.pdf](/docs/introduction.pdf) for more documentations and usage examples.
+**Check [introduction.pdf](/docs/introduction.pdf) for more documentations, usage examples, and full list of available symbols.**
 
-This LaTeX package enables the easy integration of [Google's Material Symbols](https://fonts.google.com/icons) into LaTeX documents, supporting XeLaTeX and LuaLaTeX. It provides access to a wide range of icons in various styles, enhancing the visual appeal of documents.
+This LaTeX package enables the easy integration of [Google's Material Symbols](https://fonts.google.com/icons) into LaTeX documents, supporting `XeLaTeX` and `LuaLaTeX`. It provides access to a wide range of icons in various styles, enhancing the visual appeal of documents.
 
 ## Prerequisites
 
@@ -39,9 +39,12 @@ Refer to [source code of project's introduction.pdf](/example-main.tex) for more
 
 To specify a style, use the optional argument:
 
-- `\mSymbol[outlined]{icon-name}` for Outlined style.
+- `\mSymbol[outlined]{icon-name}` for Outlined style (default).
 - `\mSymbol[rounded]{icon-name}` for Rounded style.
 - `\mSymbol[sharp]{icon-name}` for Sharp style.
+- `\mSymbol[outlined-filled]{icon-name}` for Outlined Filled style.
+- `\mSymbol[rounded-filled]{icon-name}` for Rounded Filled style.
+- `\mSymbol[sharp-filled]{icon-name}` for Sharp Filled style.
 
 ## List of Icons
 
