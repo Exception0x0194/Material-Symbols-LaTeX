@@ -2,11 +2,13 @@
 
 ![Showcase of symbols](docs/showcase.jpg)
 
+Check [introduction.pdf](/docs/introduction.pdf) for more documentations and usage examples.
+
 This LaTeX package enables the easy integration of [Google's Material Symbols](https://fonts.google.com/icons) into LaTeX documents, supporting XeLaTeX and LuaLaTeX. It provides access to a wide range of icons in various styles, enhancing the visual appeal of documents.
 
 ## Prerequisites
 
-- XeLaTeX or LuaLaTeX: This package is compatible with XeLaTeX and LuaLaTeX to utilize font features.
+- `XeLaTeX` or `LuaLaTeX`: This package is compatible with `XeLaTeX` and `LuaLaTeX` to utilize font features.
 
 ## Installation
 
@@ -30,6 +32,8 @@ Here is a Material Symbol: \mSymbol{sports-soccer}.
 
 \end{document}
 ```
+
+Refer to [source code of project's introduction.pdf](/example-main.tex) for more examples.
 
 ### Styles
 
