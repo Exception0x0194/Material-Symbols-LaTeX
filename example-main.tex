@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\usepackage{longtable, array}
+\usepackage{hyperref}
+
+\usepackage[
+	a4paper,
+	left=1.2cm,
+	right=1.2cm,
+	top=1.5cm,
+	bottom=1cm,
+	nohead
+]{geometry}
+\pagenumbering{gobble}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=cyan,
+	filecolor=blue,      
+	urlcolor=red,
+	citecolor=green,
+}
+
+\usepackage{material-symbols}
+
+\title{Material Symbols}
+\date{August 2024}
+\author{Exception0x0194}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+The \texttt{material-symbols} package provides a straightforward way to incorporate \href{https://fonts.google.com/icons}{Google's Material Symbols} into \LaTeX\ documents. This package offers access to a broad array of icons in various styles, enhancing the visual elements of your documentation.
+
+\section{Usage}
+
+Access symbols via a standardized command: \texttt{\textbackslash mSymbol\{name\}}, where \texttt{name} refers to the symbol's name in \href{https://fonts.google.com/icons}{Google Fonts}, formatted in \texttt{kebab-case}.
+
+For example, \texttt{\textbackslash mSymbol\{sports-soccer\}} renders \mSymbol{sports-soccer}.
+
+These commands can be employed anywhere in your \LaTeX\ documents to insert icons at desired locations.
+
+\subsection{Styles}
+
+Material Symbols are available in three styles: \textbf{Outlined}, \textbf{Round}, and \textbf{Sharp}. The default style is \textbf{Outlined}, but you can specify an alternative style using an optional argument:
+
+\begin{itemize}
+    \item \texttt{\textbackslash mSymbol[outlined]\{star-rate\}} (or \texttt{\textbackslash mSymbol\{star-rate\}}) displays the icon's outlined version: \mSymbol{star-rate}.
+    \item \texttt{\textbackslash mSymbol[rounded]\{star-rate\}} displays the icon's rounded version: \mSymbol[rounded]{star-rate}.
+    \item \texttt{\textbackslash mSymbol[sharp]\{star-rate\}} displays the icon's sharp version: \mSymbol[sharp]{star-rate}.
+\end{itemize}
+
+\section{List of Icons}
+
+Below is a table listing all available symbols in this package, complete with previews of the icons in their different styles, the corresponding commands, and their codepoints. For a more user-friendly search, visit \href{https://fonts.google.com/icons}{Google Fonts}.
+
+\include{example-table}
+
+
+\end{document}
