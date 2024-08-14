@@ -1,5 +1,7 @@
 # Material Symbols for LaTeX
 
+![Showcase of symbols](docs/showcase.jpg)
+
 This LaTeX package enables the easy integration of [Google's Material Symbols](https://fonts.google.com/icons) into LaTeX documents, supporting XeLaTeX and LuaLaTeX. It provides access to a wide range of icons in various styles, enhancing the visual appeal of documents.
 
 ## Prerequisites
