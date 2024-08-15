@@ -51,8 +51,12 @@
 }
 
 \newcommand{\mSymbol}[2][regular]{%
-  \pgfkeysgetvalue{/mSymbols/#2}\tempSymbolCode%
-  \mSymbolCode[#1]{\tempSymbolCode}%
+  \makebox[0.5em]{
+  \raisebox{-0.4ex}{
+      \pgfkeysgetvalue{/mSymbols/#2}\tempSymbolCode%
+      \mSymbolCode[#1]{\tempSymbolCode}
+  }%
+  }
 }
 
 \endinput
