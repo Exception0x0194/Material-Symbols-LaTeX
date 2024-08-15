@@ -1,8 +1,3 @@
-list_file_name = "./codepoints.txt"
-output_name = "./output_table.txt"
-
-example_command = r"\miOneTwoThree"
-
 table_head = r"""\begin{longtable}{
 >{\raggedright\arraybackslash}p{0.1\textwidth}
 >{\raggedright\arraybackslash}p{0.1\textwidth}
@@ -20,7 +15,7 @@ table_tail = r"""
 """
 
 codepoint_file_name = "./symbols-codepoints.txt"
-pgf_file_name = "./symbols-table.txt"
+output_file_name = "./symbols-table.txt"
 
 lines = open(codepoint_file_name, encoding="utf-8").readlines()
 entries_lines = [table_head]
@@ -34,6 +29,6 @@ for line in lines:
     entries_lines.append(entry_line)
 entries_lines.append(table_tail)
 
-with open(pgf_file_name, "w", encoding="utf-8") as f:
+with open(output_file_name, "w", encoding="utf-8") as f:
     f.writelines(entries_lines)
     f.close()
