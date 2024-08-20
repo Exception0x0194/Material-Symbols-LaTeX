@@ -34,7 +34,7 @@
     ItailcFont=*,
     BoldItalicFont=*,
     Extension=.ttf,
-]{MaterialSymbolsOutlined_Filled-Regular}
+]{MaterialSymbolsOutlinedFilled-Regular}
 
 \newfontfamily{\MaterialSymbolsRoundedFilled}[
     Path=fonts/,
@@ -42,7 +42,7 @@
     ItailcFont=*,
     BoldItalicFont=*,
     Extension=.ttf,
-]{MaterialSymbolsRounded_Filled-Regular}
+]{MaterialSymbolsRoundedFilled-Regular}
 
 \newfontfamily{\MaterialSymbolsSharpFilled}[
     Path=fonts/,
@@ -50,7 +50,7 @@
     ItailcFont=*,
     BoldItalicFont=*,
     Extension=.ttf,
-]{MaterialSymbolsSharp_Filled-Regular}
+]{MaterialSymbolsSharpFilled-Regular}
 
 
 \input{name-casting}
@@ -69,12 +69,10 @@
 }
 
 \newcommand{\mSymbol}[2][regular]{%
-  \makebox[0.5em]{
-  \raisebox{-0.3ex}{
+  \makebox[1em]{%
       \pgfkeysgetvalue{/mSymbols/#2}\tempSymbolCode%
-      \mSymbolCode[#1]{\tempSymbolCode}
+      \mSymbolCode[#1]{\tempSymbolCode}%
   }%
-  }
 }
 
 \endinput
